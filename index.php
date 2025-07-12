@@ -7,25 +7,38 @@
     <title>exo php N°0000</title>
 </head>
 <body>
-    <section class="exo1">
-        <div class="bonjours">    
-            <h1><?php echo"Hello World Aurélien"; ?></h1>
-            <h2><?php echo"Hello World Aurélien"; ?></h2>
-            <h3><?php echo"Hello World Aurélien"; ?></h3>
-            <h4><?php echo"Hello World Aurélien"; ?></h4>
-            <h5><?php echo"Hello World Aurélien"; ?></h5>
-            <h6><?php echo"Hello World Aurélien"; ?></h6>    
-        </div>
-    </section>
-    <section class="exo2">
-        <?php
-            $prenom = "Alice";
-            $age = 25;
-            // echo "This string spans\nmultiple lines. The newlines will be\noutput as well.";
-            echo "This string spans
-            multiple lines. The newlines will be
-            output as well";
-        ?>
-    </section>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                <a href="#">Exercice N°1</a>
+                <ul>
+                    <li><a href="exo1.php">exo1</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                </li>
+                <li>
+                <a href="#">Exercice N°2</a>
+                <ul>
+                    <li><a href="me.php">me.php</a></li>
+                    <li><a href="prix.php">prix.php</a></li>
+                    <li><a href="test.php">test.php</a></li>
+                </ul>
+                </li>
+                <li>
+                <a href="#">Exercice N°3</a>
+                <ul>
+                    <li><a href="exo-3.1-php.php">exo-3.1</a></li>
+                    <li><a href="exo-3.2-php.php">exo-3.2</a></li>
+                    <li><a href="exo-3.3-php.php">exo-3.3</a></li>
+                    <li><a href="exo-3.4-php.php">exo-3.4</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+ 
+    </main>
 </body>
 </html>

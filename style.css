@@ -1,17 +1,102 @@
-body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* ========== VARIABLES DE COULEUR :root ========== */
+:root {
+  --color-bg: #f9f9f9;
+  --color-primary: #004080;
+  --color-secondary: #0072ff;
+  --color-text: #222;
+  --color-hover: #0055aa;
 }
 
-.bonjours {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
-    text-align: center;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  padding: 0;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  background-color: var(--color-primary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  position: relative;
+  border-top: 1px solid #fff3;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--color-hover);
+}
+
+/* ========== SOUS-MENU ========== */
+nav li ul {
+  display: none;
+  flex-direction: column;
+  background-color: #003366;
+}
+
+nav li:hover ul {
+  display: flex;
+}
+
+/* ========== MEDIA QUERY TABLETTE (≥768px) ========== */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    z-index: 10;
+  }
+
+  nav li:hover ul {
+    display: block;
+  }
+
+  nav li ul li {
+    border-top: 1px solid #ffffff33;
+  }
+}
+
+/* ========== MEDIA QUERY DESKTOP (≥991px) ========== */
+@media (min-width: 991px) {
+  nav a {
+    padding: 1rem 1.5rem;
+  }
+
+  nav li ul {
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
 }
