@@ -1,3 +1,6 @@
+<?php 
+include "./inc/header.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,3 +45,6 @@
     </main>
 </body>
 </html>
+<?php 
+include "./inc/footer.php";
+?>
