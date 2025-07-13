@@ -1,27 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exo3-php3.1</title>
-</head>
-<body>
-   <?php
-$a = 5;
-$b = 10;
-
-$som = $a + $b;
-$diff = $a - $b;
-$prod = $a * $b;
-$quot = $a / $b;
-$rest = $a % $b;
-
-echo "La somme de a et b est $som.<br>";
-echo "La différence de a et b est $diff.<br>";
-echo "Le produit de a et b est $prod.<br>";
-echo "Le quotient de a et b est $quot.<br>";
-echo "Le reste de a et b est $rest.<br>";
+<?php 
+    include __DIR__ . '/../inc/header.php';
 ?>
 
-</body>
-</html>
+<h2>exo3.1-PHP</h2>
+<section class="container">
+<?php
+    $a = 5;
+    $b = 10;
+
+    $som = $a + $b;
+    $diff = $a - $b;
+    $prod = $a * $b;
+    $quot = $a / $b;
+    $rest = $a % $b;
+
+    echo "La somme de a et b est $som.<br>";
+    echo "La différence de a et b est $diff.<br>";
+    echo "Le produit de a et b est $prod.<br>";
+    echo "Le quotient de a et b est $quot.<br>";
+    echo "Le reste de a et b est $rest.<br>";
+?>
+</section>
+<?php 
+    include __DIR__ . '/../inc/footer.php';
+?>

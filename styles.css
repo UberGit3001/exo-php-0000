@@ -1,4 +1,4 @@
-/* ========== VARIABLES DE COULEUR :root ========== */
+/* ========== VARIABLES CSS ========== */
 :root {
   --color-bg: #f9f9f9;
   --color-primary: #004080;
@@ -14,23 +14,14 @@
   box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-}
-
 body {
-  width: 100%;
-  height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.5;
-  padding: 0;
 }
 
-/* ========== NAVIGATION ========== */
+/* ========== NAVIGATION (Mobile First) ========== */
 nav {
   background-color: var(--color-primary);
 }
@@ -43,21 +34,21 @@ nav ul {
 
 nav li {
   position: relative;
-  border-top: 1px solid #fff3;
+  border-top: 1px solid #ffffff33;
 }
 
-nav a {
+nav > ul > li > a {
   display: block;
   padding: 1rem;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-nav a:hover {
+nav li a:hover {
   background-color: var(--color-hover);
 }
 
-/* ========== SOUS-MENU ========== */
 nav li ul {
   display: none;
   flex-direction: column;
@@ -68,29 +59,24 @@ nav li:hover ul {
   display: flex;
 }
 
-/* ========== CONTAINER CENTRAL POUR LE CONTENU ========== */
-.container {
-  max-width: 800px;
-  margin: 2rem auto;
+/* ========== MAIN ========== */
+main {
   padding: 2rem;
-  background-color: #fdf6e3; /* beige doux */
-  color: #6a0dad; /* violet agréable */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--color-primary);
+  color: white;
+}
 
-/* ========== MEDIA QUERY TABLETTE (≥768px) ========== */
+/* ========== MEDIA QUERIES TABLETTE (≥768px) ========== */
 @media (min-width: 768px) {
   nav ul {
     flex-direction: row;
     justify-content: space-around;
-  }
-
-  nav li {
-    border: none;
   }
 
   nav li ul {
@@ -99,6 +85,7 @@ nav li:hover ul {
     left: 0;
     min-width: 180px;
     z-index: 10;
+    display: none;
   }
 
   nav li:hover ul {
@@ -110,15 +97,18 @@ nav li:hover ul {
   }
 }
 
-/* ========== MEDIA QUERY DESKTOP (≥991px) ========== */
+/* ========== MEDIA QUERIES DESKTOP (≥991px) ========== */
 @media (min-width: 991px) {
   nav a {
     padding: 1rem 1.5rem;
   }
 
   nav li ul {
-    top: 100%;
-    left: 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
   }
 }
