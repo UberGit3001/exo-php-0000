@@ -78,34 +78,86 @@ nav li:hover ul {
               SOUS-MENU 
    ======================================== */
    /* ========== SOUS-MENU NIVEAU 3 ========== */
-nav li ul li ul {
+/* nav li ul li ul {
   display: none;
   position: absolute;
   left: 100%;
   top: 0;
-  background: linear-gradient(to bottom right, #004080, #0072ff); /* nouveau dégradé */
-  min-width: 180px;
-  z-index: 20;
-}
+  background: linear-gradient(to bottom right, #004080, #0072ff); 
+  /* nouveau dégradé */
+  /* min-width: 180px;
+  z-index: 20; 
+}*/
 
 /* Affichage au survol du sous-menu parent */
-nav li ul li:hover ul {
+/* nav li ul li:hover ul {
   display: block;
-}
+} */
 
 /* Style des liens dans le niveau 3 */
+/* nav li ul li ul a {
+  background-color: #003366;
+  color: #fff;
+  font-size: 0.9rem;
+} */
+
+/* Hover pour les sous-sous-liens */
+/* nav li ul li ul a:hover { */
+  /* background: linear-gradient(to right, #0055aa, #00aaff); */
+   /* autre dégradé au hover */
+  /* color: #fff; 
+}*/
+
+/* =============================================
+      essaye menu et sous menu mobil first 
+    ===========================================*/
+
+/* ================================
+   NIVEAU 1 & 2 : MOBILE FIRST
+================================ */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li ul {
+  display: none;
+  flex-direction: column;
+  background-color: #003366;
+}
+
+/* Menu ouvert sur hover (uniquement desktop, via media query) */
+nav li:hover > ul {
+  display: flex;
+}
+
+/* ================================
+   NIVEAU 3 (sous-sous-menu) MOBILE
+   => Empilé sous les parents
+================================ */
+nav li ul li ul {
+  display: none;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #004080, #0072ff);
+  padding-left: 1rem;
+}
+
+/* ⚠️ Ce hover ne marche pas sur mobile, mais OK pour desktop */
+nav li ul li:hover > ul {
+  display: flex;
+}
+
 nav li ul li ul a {
   background-color: #003366;
   color: #fff;
   font-size: 0.9rem;
 }
 
-/* Hover pour les sous-sous-liens */
 nav li ul li ul a:hover {
-  background: linear-gradient(to right, #0055aa, #00aaff); /* autre dégradé au hover */
+  background: linear-gradient(to right, #0055aa, #00aaff);
   color: #fff;
 }
-
 
 
 /* ========== CONTAINER CENTRAL POUR LE CONTENU ========== */
