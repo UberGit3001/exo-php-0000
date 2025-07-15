@@ -1,13 +1,9 @@
 <?php 
     include __DIR__ . '/../inc/header.php';
 ?>
-
-<h2>exo-4.1-PHP</h2>
-<section class="container">
-<?php
- 
-  ?>
-</section>
-<?php 
+       
+       
+    
+<?php     
     include __DIR__ . '/../inc/footer.php';
 ?>

@@ -55,6 +55,23 @@
             <li><a href="/exo-php-0000/Exercice-N3/exo-3.4.php">➗ exo-3.4</a></li>
           </ul>
         </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-xmark"></i> Exercice N°4</a>
+            <ul>
+            <li>
+              <a href="/exo-php-0000/Exercice-N4/exo-4.1.php">exo-4.1</a>
+              <ul>
+                <li><a href="/exo-php-0000/Exercice-N4/exo-4.1/exo-4.1.1.php"><h6>if..elseif..else</h6>exo-4.1.1</a></li>
+                <li><a href="/exo-php-0000/Exercice-N4/exo-4.1/exo-4.1.2.php"><h6>switch</h6>exo-4.1.2</a></li>
+              </ul>          
+            
+            </li>
+            <li><a href="/exo-php-0000/Exercice-N4/exo-4.2.php">exo-4.2</a></li>
+            <li><a href="/exo-php-0000/Exercice-N4/exo-4.3.php">exo-4.3</a></li>
+            <li><a href="/exo-php-0000/Exercice-N4/exo-4.4.php">exo-4.4</a></li>
+            <li><a href="/exo-php-0000/Exercice-N4/exo-4.5.php">exo-4.5</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>

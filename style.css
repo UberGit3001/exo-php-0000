@@ -68,6 +68,46 @@ nav li:hover ul {
   display: flex;
 }
 
+.menu-desc {
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+} 
+/* ==========================================
+              SOUS-MENU 
+   ======================================== */
+   /* ========== SOUS-MENU NIVEAU 3 ========== */
+nav li ul li ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: linear-gradient(to bottom right, #004080, #0072ff); /* nouveau dégradé */
+  min-width: 180px;
+  z-index: 20;
+}
+
+/* Affichage au survol du sous-menu parent */
+nav li ul li:hover ul {
+  display: block;
+}
+
+/* Style des liens dans le niveau 3 */
+nav li ul li ul a {
+  background-color: #003366;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Hover pour les sous-sous-liens */
+nav li ul li ul a:hover {
+  background: linear-gradient(to right, #0055aa, #00aaff); /* autre dégradé au hover */
+  color: #fff;
+}
+
+
+
 /* ========== CONTAINER CENTRAL POUR LE CONTENU ========== */
 .container {
   max-width: 800px;
