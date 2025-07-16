@@ -99,6 +99,19 @@
             <li><a href="/exo-php-0000/Exercice-N6/exo-6.6.php">exo-6.6</a></li>
           </ul>
           </li>
+
+          <li>
+          <a href="#"><i class="fa-solid fa-xmark"></i> Exercice N°7</a>
+            <ul>
+            <li><a href="/exo-php-0000/Exercice-N7/exo-7.1.php">exo-7.1</a></li>
+            <li><a href="/exo-php-0000/Exercice-N7/exo-7.2.php">exo-7.2</a></li>
+            <li><a href="/exo-php-0000/Exercice-N7/exo-7.3.php">exo-7.3</a></li>
+            <li><a href="/exo-php-0000/Exercice-N7/exo-7.4.php">exo-7.4</a></li>
+            <li><a href="/exo-php-0000/Exercice-N7/exo-7.5.php">exo-7.5</a></li>
+            <li><a href="/exo-php-0000/Exercice-N7/exo-7.6.php">exo-7.6</a></li>
+          </ul>
+          </li>
+         
         
       </ul>
     </nav>
