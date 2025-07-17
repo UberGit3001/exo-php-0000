@@ -27,19 +27,21 @@ $classe = [
     ]
 ];
 
+// =============================  CALCUL DES MOYENNES  ===============================
+
 function calculerMoyenne($eleve) {
     // On additionne les notes
     $somme = $eleve["maths"] + $eleve["francais"] + $eleve["histoire"];
     $moyenne = $somme / 3;
     return $moyenne;
 }
-// $moyenne = calculerMoyenne(0);
-// ============================================================
+
+// ===========================  ADMISSIONS  =================================
 
 function estAdmis($moyenne) {
     return $moyenne >= 10;
+
 }
-$moyenne = calculerMoyenne(0);
 
 // ======================================
 
@@ -59,5 +61,6 @@ foreach ($classe as $eleve) {
 </section>
 
 <?php 
+
     include __DIR__ . '/../inc/footer.php';
 ?>
