@@ -119,13 +119,21 @@
           <li>
           <a href="/exo-php-0000/asset/documents/exo-8.$-php.docx"><i class="fas fa-arrow-circle-down"></i> Exercice N°8</a>
             <ul>
-            <li><a href="/exo-php-0000/Exercice-N8/exo-8.1.php">exo-8.1</a></li>
-            <li><a href="/exo-php-0000/Exercice-N8/exo-8.2.php">exo-8.2</a></li>
-            <li><a href="/exo-php-0000/Exercice-N8/exo-8.3.php">exo-8.3</a></li>
-            <li><a href="/exo-php-0000/Exercice-N8/exo-8.4.php">exo-8.4</a></li>
-              <!--  <li><a href="/exo-php-0000/Exercice-N8/exo-8.5.php">exo-8.5</a></li>
-            <li><a href="/exo-php-0000/Exercice-N8/exo-8.6.php">exo-8.6</a></li> -->
-          </ul>
+              <li><a href="/exo-php-0000/Exercice-N8/exo-8.1.php">exo-8.1</a></li>
+              <li><a href="/exo-php-0000/Exercice-N8/exo-8.2.php">exo-8.2</a></li>
+              <li><a href="/exo-php-0000/Exercice-N8/exo-8.3.php">exo-8.3</a></li>
+              <li><a href="/exo-php-0000/Exercice-N8/exo-8.4.php">exo-8.4</a></li>
+            </ul>
+          </li>
+
+          <li>
+          <a href="/exo-php-0000/asset/documents/exo-9.$-php.docx"><i class="fas fa-arrow-circle-down"></i> Exercice N°9</a>
+            <ul>
+              <li><a href="/exo-php-0000/Exercice-N9/exo-9.1.php">exo-9.1</a></li>
+              <li><a href="/exo-php-0000/Exercice-N9/exo-9.2.php">exo-9.2</a></li>
+              <li><a href="/exo-php-0000/Exercice-N9/exo-9.3.php">exo-9.3</a></li>
+              <li><a href="/exo-php-0000/Exercice-N9/exo-9.4.php">exo-9.4</a></li>
+            </ul>
           </li>
          
         
