@@ -1,3 +1,11 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+} 
+
+
+
 /* ========== VARIABLES DE COULEUR :root ========== */
 :root {
   --color-bg: #f9f9f9;
@@ -8,11 +16,11 @@
 }
 
 /* ========== RESET ========== */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html {
   width: 100%;
@@ -29,6 +37,7 @@ body {
   color: var(--color-text);
   line-height: 1.5;
   padding: 0;
+  font-optical-sizing: auto;
 }
 
 /* ========== NAVIGATION ========== */
@@ -169,6 +178,12 @@ body>main {
 
 /* ========== CONTAINER CENTRAL POUR LE CONTENU ========== */
 main>.container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* align-items: center; */
+  
   width: 100%;
   max-width: 800px;
   margin: 2rem auto;
@@ -181,6 +196,68 @@ main>.container {
   line-height: 1.6;
 }
 
+.container .box {
+  background-color: rgba(126, 128, 0, 0.215) ; 
+  width: 40%;
+  height: 50%;
+  /* border: 3px solid #004080; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px #6a0dad;
+  padding: 2rem;
+  margin: 2rem auto;
+  overflow-y: hidden;
+  /* z-index: 5; */
+}
+
+.classement {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.classement th, .classement td {
+    /* border: 1px solid #ddd; */
+    border: 1px solid #f03f3f;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.classement th {
+    background-color: #333;
+    color: white;
+}
+
+.classement tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+/* ======================= tableau exercice8.4 ============================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th {
+  background: #003366;
+  color: white;
+}
+td, th {
+  text-align: center;
+}
+h2 i {
+  color: gold;
+  margin-right: 8px;
+}
+p i {
+  color: green;
+  margin-right: 5px;
+}
+
+/* ======================= fin tableau exercice8.4 ============================ */
 
 /* ========== MEDIA QUERY TABLETTE (≥768px) ========== */
 @media (min-width: 768px) {
@@ -209,6 +286,8 @@ main>.container {
     border-top: 1px solid #ffffff33;
   }
 }
+
+
 
 /* ========== MEDIA QUERY DESKTOP (≥991px) ========== */
 @media (min-width: 991px) {

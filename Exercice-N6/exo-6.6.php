@@ -8,15 +8,22 @@
 
 <?php
     $eleves = [
-        "Alice" => ["maths" => 15, "francais" => 14, "anglais" => 13],
-        "Bob" => ["maths" => 8, "francais" => 10, "anglais" => 11],
-        "Claire" => ["maths" => 18, "francais" => 17, "anglais" => 19]
+        "Alice" => ["maths" => 15,
+                    "francais" => 14,
+                    "anglais" => 13],
+        "Bob" => ["maths" => 8,
+                  "francais" => 10, 
+                  "anglais" => 11],
+        "Claire" => ["maths" => 18, 
+                     "francais" => 17, 
+                     "anglais" => 19]
     ];
 
     // 1. Moyenne individuelle + appréciation
     foreach ($eleves as $nom => $notes) {
         $somme = array_sum($notes);
         $moyenne = $somme / count($notes);
+       
         
         if ($moyenne < 10) {
             $appreciation = "Échec";

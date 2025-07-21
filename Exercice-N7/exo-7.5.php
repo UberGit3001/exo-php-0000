@@ -20,15 +20,20 @@
             }
         }
     }
-
+    echo '<div class="box box1">';        
     // 1. Afficher tous les nombres **pairs** de 7 à 99
     echo "<h3>Nombres pairs de 7 à 99 :</h3>";
     afficherNombres(7, 99, "pair");
-
+    echo '</div>';
+  
+    echo '<div class="box box2">';
     // 2. Afficher tous les nombres **impairs** de 59 à 169
     echo "<h3>Nombres impairs de 59 à 169 :</h3>";
     afficherNombres(59, 169, "impair");
+    echo '</div>';
     ?>
+    
+   
 
 
 
